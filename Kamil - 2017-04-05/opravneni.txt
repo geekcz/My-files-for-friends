@@ -1,0 +1,11 @@
+# dat do stranky, na kterou muzou jen prihlaseni
+if(!isset($_SESSION["id"])){
+    header("Location: index.php");
+    exit;
+}
+
+# dat do stranky, na kterou muzou jen admini; a nezapomen vytvorit soubor menas_prava.php nebo jiny
+if($_SESSION["prava"]=="0"){
+    header("Location: nemas_prava.php");
+    exit;
+}
