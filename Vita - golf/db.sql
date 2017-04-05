@@ -1,0 +1,2 @@
+# vysledky turnaju
+SELECT SUM(vysledky.1+vysledky.2+vysledky.3+vysledky.4+vysledky.5+vysledky.6+vysledky.7+vysledky.8+vysledky.9+vysledky.10+vysledky.11+vysledky.12+vysledky.13+vysledky.14+vysledky.15+vysledky.16+vysledky.17+vysledky.18) as pocet, hraci.jmeno, hraci.prijmeni FROM vysledky LEFT JOIN hraci ON vysledky.id_hrace=hraci.id GROUP BY vysledky.id_hrace ORDER BY pocet ASC
