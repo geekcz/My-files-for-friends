@@ -1,0 +1,4 @@
+#co to je? tohle byla ta chyba pri prvnim nacteni clanku
+    if($_SESSION["prava"]==""){
+        $_SESSION["prava"]="0";
+    }
